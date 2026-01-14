@@ -1,0 +1,52 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv_fraud/
+venv/
+env/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Data
+data/raw/*.csv
+data/processed/*
+!data/processed/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+.coverage
+coverage.xml
+htmlcov/
+.pytest_cache/
+
+# Models
+*.pkl
+*.joblib
+models/*.h5
+models/*.pt
+# Important configuration files (keep tracked)
+!Makefile
+!requirements.txt
+!README.md

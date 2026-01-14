@@ -1,0 +1,102 @@
+{
+  "dataset_metrics": {
+    "total_transactions": 284807,
+    "fraud_transactions": 492,
+    "normal_transactions": 284315,
+    "fraud_rate_percent": 0.1727,
+    "imbalance_ratio": 578.9,
+    "normal_avg_amount": 88.29,
+    "fraud_avg_amount": 122.21
+  },
+  "amount_statistics": {
+    "normal_percentiles": {
+      "q25": 5.65,
+      "median": 22.00,
+      "q75": 77.05,
+      "min": 0.0,
+      "max": 25691.16
+    },
+    "fraud_percentiles": {
+      "q25": 1.00,
+      "median": 9.25,
+      "q75": 105.89,
+      "min": 0.0,
+      "max": 2125.87
+    }
+  },
+  "temporal_patterns": {
+    "day_1_normal": {
+      "transactions": 144505,
+      "avg_amount": 90.38,
+      "avg_hour": 14.71
+    },
+    "day_1_fraud": {
+      "transactions": 281,
+      "avg_amount": 118.29,
+      "avg_hour": 12.50
+    },
+    "day_2_normal": {
+      "transactions": 139810,
+      "avg_amount": 86.13,
+      "avg_hour": 38.37
+    },
+    "day_2_fraud": {
+      "transactions": 211,
+      "avg_amount": 127.44,
+      "avg_hour": 35.65
+    }
+  },
+  "amount_range_analysis": {
+    "Zero": {"total": 1825, "fraud": 27, "fraud_rate": 1.48},
+    "Very_Low_0_10": {"total": 98439, "fraud": 222, "fraud_rate": 0.23},
+    "Low_10_50": {"total": 90781, "fraud": 57, "fraud_rate": 0.06},
+    "Medium_50_100": {"total": 37254, "fraud": 56, "fraud_rate": 0.15},
+    "High_100_500": {"total": 47366, "fraud": 95, "fraud_rate": 0.20},
+    "Very_High_500_1000": {"total": 6202, "fraud": 26, "fraud_rate": 0.42},
+    "Extreme_1000_plus": {"total": 2940, "fraud": 9, "fraud_rate": 0.31}
+  },
+  "top_correlations": {
+    "V3": -0.1930,
+    "V4": 0.1334,
+    "V1": -0.1013,
+    "V2": -0.0916,
+    "V5": -0.0936
+  },
+  "key_findings": [
+    "Desbalanceo extremo: 578.9:1 (Normal:Fraude)",
+    "Tasa de fraude muy baja: 0.1727%",
+    "Diferencia en montos promedio: $33.92 (fraudes más altos)",
+    "Variable más correlacionada: V3 (-0.1930)",
+    "Transacciones de monto cero tienen mayor tasa de fraude: 1.48%",
+    "Rangos Very_High (500-1000) tienen tasa de fraude elevada: 0.42%"
+  ],
+  "ml_recommendations": {
+    "balancing_techniques": ["SMOTE", "ADASYN", "Undersampling", "Cost-sensitive learning"],
+    "evaluation_metrics": ["Precision", "Recall", "F1-Score", "AUC-ROC", "AUC-PR"],
+    "recommended_algorithms": ["XGBoost", "LightGBM", "Random Forest", "Ensemble methods"],
+    "validation_strategy": "StratifiedKFold to maintain class distribution",
+    "feature_engineering": [
+      "Temporal velocity features",
+      "Time-window aggregations",
+      "Variable interactions V1-V28",
+      "Amount percentile features"
+    ]
+  },
+  "fraud_patterns_identified": [
+    "Patrón 1: Transacciones de monto cero con alta tasa de fraude",
+    "Patrón 2: Concentración en rangos de monto muy altos (500-1000)",
+    "Patrón 3: Correlación negativa fuerte con V3 (-0.1930)",
+    "Patrón 4: Distribución temporal relativamente uniforme",
+    "Patrón 5: Montos promedio ligeramente superiores en fraudes"
+  ],
+  "analysis_metadata": {
+    "analyst": "Ing. Daniel Varela Perez",
+    "contact": "bedaniele0@gmail.com",
+    "phone": "+52 55 4189 3428",
+    "analysis_date": "2025-09-24",
+    "analysis_type": "SQL EDA Analysis",
+    "dataset_source": "data/raw/creditcard.csv",
+    "visualizations_created": "reports/figures/sql_analysis_complete.png",
+    "queries_documented": "data/sql/analysis_queries.sql"
+  }
+}
