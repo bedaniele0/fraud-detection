@@ -661,8 +661,10 @@ Senior Data Scientist & ML Engineer
 
 📧 **Email:** bedaniele0@gmail.com
 📱 **Tel:** +52 55 4189 3428
-💼 **LinkedIn:** [Tu perfil LinkedIn]
-🐙 **GitHub:** [Tu perfil GitHub]
+💼 **LinkedIn:** https://linkedin.com/in/daniel-varela-perez
+🐙 **GitHub (Portafolio):** https://github.com/bedaniele0/data-science-portfolio
+📄 **CV (PDF):** https://raw.githubusercontent.com/bedaniele0/data-science-portfolio/main/cv/CV_Daniel_Varela_Perez_Data_Scientist_E2E.pdf
+📍 **Ubicación:** Ciudad de México
 
 ### Especialidades
 
