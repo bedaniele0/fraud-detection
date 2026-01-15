@@ -27,6 +27,8 @@ env/
 data/raw/*.csv
 data/processed/*
 !data/processed/.gitkeep
+!data/processed/train_clean.parquet/
+!data/processed/train_clean.parquet/part.0.parquet
 
 # IDE
 .vscode/
