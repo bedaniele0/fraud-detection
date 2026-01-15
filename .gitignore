@@ -46,6 +46,8 @@ htmlcov/
 *.joblib
 models/*.h5
 models/*.pt
+# Demo model
+!models/improved_recall_threshold_model.pkl
 # Important configuration files (keep tracked)
 !Makefile
 !requirements.txt
